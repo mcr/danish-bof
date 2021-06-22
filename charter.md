@@ -21,18 +21,15 @@ namespace and authenticated discovery mechanism on the Internet.
 DANE builds on this authenticated discovery mechanism to enable public key-based
 TLS authentication which is resilient to impersonation, but only for TLS
 server identities.
+What DANE did not define is how services can authenticate connecting clients.
 
-In response to the challenges related to ambiguity between identities issued
+In response to the challenges related to ambiguity between client identities issued
 by different CAs, application owners frequently choose to onboard IoT devices
 to a single private CA specific to that vertical.
 This creates a silo effect where different parts of large deployment can not
-communicate.  For instance the heating cooling system of a building
+communicate.  For instance the heating/cooling system of a building
 wishing to turn lights off to reduce room temperatures can not
 authenticate to the lighting control system.
-
-A DNS name is a useful unique identifier to which humans interact with well,
-and which can be used (thanks to DNSSEC and DANE) to attach a key by which to
-authenticate the message sender identity.
 
 ## Scope of work
 
@@ -48,7 +45,7 @@ DANE.
 
 Future work may include using client identifiers for other tasks including object security, or authenticating to other protocol services.
 The DANISH working group will take care to ensure a
-potential path for interoperability, enabling potential future work.
+potential path for interoperability, enabling these potential future directions.
 
 ## Deliverables:
 
