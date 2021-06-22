@@ -3,7 +3,7 @@
 - Name: DANE AutheNtication for Iot Service Hardening
 - Revision: 1.2.0
 
-## Objective
+## Objectives
 
 The DANE AutheNtication for Iot Service Hardening (DANISH) WG seeks to
 extend DANE to encompass TLS client authentication using certificates or Raw Public Keys (RPK).
@@ -26,8 +26,9 @@ In response to the challenges related to ambiguity between identities issued
 by different CAs, application owners frequently choose to onboard IoT devices
 to a single private CA specific to that vertical.
 This creates a silo effect where different parts of large deployment can not
-communicate.  For instance the heating cooling system of a building can not
-authenticate the lighting control system.
+communicate.  For instance the heating cooling system of a building
+wishing to turn lights off to reduce room temperatures can not
+authenticate to the lighting control system.
 
 A DNS name is a useful unique identifier to which humans interact with well,
 and which can be used (thanks to DNSSEC and DANE) to attach a key by which to
