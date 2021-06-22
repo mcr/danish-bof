@@ -61,6 +61,8 @@ potential path for interoperability with the following standards, enabling
 potential future work:SMIMEA (RFC 8162), Proxy headers (RFC 7239), IANA
 email authentication headers, and TCP proxy TLVs standardized by haproxy.
 
+In this initial chartering, EAP-TLS and other network level authentication systems are not in scope.
+
 ## Deliverables:
 
 * DANISH architecture document (9 months)
