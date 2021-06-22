@@ -47,7 +47,7 @@ DANISH will specify the TLS session and object security use cases and an
 architecture describing the primary components and interaction patterns.
 
 DANISH will establish usage conventions for DANE DNS records to represent
-client identity for TLS connections and how to perform public key discovery
+device identity for TLS connections and how to perform public key discovery
 for object security use cases, like the establishment of object sender
 identity.
 
@@ -67,7 +67,7 @@ In this initial chartering, EAP-TLS and other network level authentication syste
 
 * DANISH architecture document (9 months)
 
-* DANE for client certificates (current draft) (6 months)
+* DANE for device certificates (current draft) (6 months)
 
 * DANE for TLS client authentication (current draft) (6 months)
 
