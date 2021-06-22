@@ -35,7 +35,7 @@ authenticate the lighting control system.
 Many IoT deployments use some kind of message bus (for instance MQTT) to
 exchange data, and there is a strong desire to add object security
 to the objects which are exchanged.
-While there is TLS for connection security, it does not extend to what is  communicated and so does not convey authority to make a claim, while object security system would provide that.
+While there might be TLS in use for connection security, it does not extend to what is communicated and so does not convey authority assert a reading, while an object security system would provide that.
 
 A DNS name is a useful unique identifier to which humans interact with well,
 and which can be used (thanks to DNSSEC and DANE) to attach a key by which to
