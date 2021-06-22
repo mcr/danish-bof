@@ -9,7 +9,7 @@ The DANE AutheNtication for Iot Service Hardening (DANISH) WG seeks to
 extend DANE to encompass TLS client authentication using certificates.
 
 The WG will also use DANE to establish identities for store and forward of
-messages using sender identities.      [better wording sought]
+objects using object security, secured with sender identities.
 
 ## Problem statement
 
@@ -33,23 +33,23 @@ communicate.  For instance the heating cooling system of a building can not
 authenticate the lighting control system.
 
 Many IoT deployments use some kind of message bus (for instance MQTT) to
-exchange data, and there is a strong desire to add message-level security
+exchange data, and there is a strong desire to add object security
 (MLS) to the objects which are exchanged.  While there is TLS for connection security,
 it does not extend to what is communicated and so does not convey authority
 to make a claim, while a MLS would provide that.
 
 A DNS name is a useful unique identifier to which humans interact with well,
 and which can be used (thanks to DNSSEC and DANE) to attach a key by which to
-authenticate the message sender identity.
+authenticate the object sender identity.
 
 ## Scope of work
 
-DANISH will specify the TLS session and message security use cases and an
+DANISH will specify the TLS session and object security use cases and an
 architecture describing the primary components and interaction patterns.
 
 DANISH will establish usage conventions for DANE DNS records to represent
 client identity for TLS connections and how to perform public key discovery
-for message security use cases, like the establishment of message sender
+for object security use cases, like the establishment of object sender
 identity.
 
 DANISH will coordinate with the TLS working group to define any required
