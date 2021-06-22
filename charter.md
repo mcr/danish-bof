@@ -45,11 +45,9 @@ DANISH will work with the TLS working group to define any required
 TLS v1.3 protocol updates required to support client authentication using
 DANE.
 
-While modifications to the following standards are not within the scope of
-the DANISH charter, the DANISH working group will take care to ensure a
-potential path for interoperability with the following standards, enabling
-potential future work: SMIMEA (RFC 8162), Proxy headers (RFC 7239), IANA
-email authentication headers, and TCP proxy TLVs standardized by haproxy.
+Future work may include using client identifiers for other tasks including object security, or authenticating to other protocol services.
+The DANISH working group will take care to ensure a
+potential path for interoperability, enabling potential future work.
 
 ## Deliverables:
 
