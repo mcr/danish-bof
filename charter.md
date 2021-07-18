@@ -13,18 +13,24 @@ extend DANE to encompass TLS client authentication using certificates or Raw Pub
 The process of establishing trust in public-key-authenticated identity
 typically involves the use of a Public Key Infrastructure (PKI), and a
 shared PKI root of trust between the parties exchanging public keys. A
-Certification Authority (CA) is one example of a PKI which can be used for
-establishing trust in public keys.
+Certification Authority (CA) is one example of a root of trust for a
+PKI, can be used for establishing trust in public keys from lower
+levels in a PKI tree.
 
 The DNS namespace, together with DNSSEC, forms the most widely-recognized
-namespace and authenticated discovery mechanism on the Internet.
-DANE builds on this authenticated discovery mechanism to enable public key-based
-TLS authentication which is resilient to impersonation, but only for TLS
-server identities.
+namespace and authenticated lookup mechanism on the Internet.
+DANE builds on this authenticated lookup mechanism to enable public key-based
+TLS authentication which is resilient to impersonation, but only
+for TLS server identities.
 What DANE did not define is how services can authenticate connecting clients.
 
-In response to the challenges related to ambiguity between client identities issued
-by different CAs, application owners frequently choose to onboard IoT devices
+<!-- defines a lookup mechanism for TLS -->
+<!-- server identities and a published trust-path to their public key. -->
+
+In response to the challenges related to ambiguity between identically
+named identities issued
+by different CAs, application owners frequently choose to onboard IoT
+device's client identities
 to a single private CA specific to that vertical.
 This creates a silo effect where different parts of large deployment can not
 communicate.  For instance the heating/cooling system of a building
