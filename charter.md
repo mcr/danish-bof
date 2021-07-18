@@ -14,8 +14,7 @@ The process of establishing trust in public-key-authenticated identity
 typically involves the use of a Public Key Infrastructure (PKI), and a
 shared PKI root of trust between the parties exchanging public keys. A
 Certification Authority (CA) is one example of a root of trust for a
-PKI, can be used for establishing trust in public keys from lower
-levels in a PKI tree.
+PKI, which can be then used for establishing trust in public keys from lower levels in a PKI tree.
 
 The DNS namespace, together with DNSSEC, forms the most widely-recognized
 namespace and authenticated lookup mechanism on the Internet.
@@ -31,7 +30,7 @@ In response to the challenges related to ambiguity between identically
 named identities issued
 by different CAs, application owners frequently choose to onboard IoT
 device's client identities
-to a single private CA specific to that vertical.
+to a single private PKI with a limited CA set that is specific to that vertical.
 This creates a silo effect where different parts of large deployment can not
 communicate.  For instance the heating/cooling system of a building
 wishing to turn lights off to reduce room temperatures can not
@@ -43,9 +42,9 @@ DANISH will specify the TLS client authentication use case and an
 architecture describing the primary components and interaction patterns.
 
 DANISH will establish usage conventions for DANE DNS records to represent
-client identity for TLS connections. 
+client identities for TLS connections. 
 
-DANISH will work with the TLS working group to define any required
+DANISH will coordinate with the TLS working group to define any required
 TLS v1.3 protocol updates required to support client authentication using
 DANE.
 
