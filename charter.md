@@ -14,14 +14,15 @@ The process of establishing trust in public-key-authenticated identity
 typically involves the use of a Public Key Infrastructure (PKI), and a
 shared PKI root of trust between the parties exchanging public keys. A
 Certification Authority (CA) is one example of a root of trust for a
-PKI, which can be then used for establishing trust in public keys from lower levels in a PKI tree.
+PKI, which can be then used for establishing trust in certified public
+keys.
 
 The DNS namespace, together with DNSSEC, forms the most widely-recognized
 namespace and authenticated lookup mechanism on the Internet.
 DANE builds on this authenticated lookup mechanism to enable public key-based
 TLS authentication which is resilient to impersonation, but only
 for TLS server identities.
-What DANE did not define is how services can authenticate connecting clients.
+However, DANE did not define authentication for TLS client identities.
 
 <!-- defines a lookup mechanism for TLS -->
 <!-- server identities and a published trust-path to their public key. -->
@@ -45,7 +46,7 @@ DANISH will establish usage conventions for DANE DNS records to represent
 client identities for TLS connections. 
 
 DANISH will coordinate with the TLS working group to define any required
-TLS v1.3 protocol updates required to support client authentication using
+TLS protocol updates required to support client authentication using
 DANE.
 
 Future work may include using client identifiers for other tasks including object security, or authenticating to other protocol services.
