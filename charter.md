@@ -1,11 +1,11 @@
-# Charter proposal for an DANISH WG
+# Charter proposal for an DANCE WG
 
-- Name: DANE AutheNtication for Iot Service Hardening
+- Name: DANE Authentication for Network Clients Everywhere (DANCE) [TBD: verify]
 - Revision: 1.2.0
 
 ## Objective
 
-The DANE AutheNtication for Iot Service Hardening (DANISH) WG seeks to
+The DANE Authentication for Network Clients Everywhere (DANCE) WG seeks to
 extend DANE to encompass TLS client authentication using certificates or Raw Public Keys (RPK).
 
 ## Problem Statement
@@ -28,37 +28,40 @@ However, DANE did not define authentication for TLS client identities.
 <!-- server identities and a published trust-path to their public key. -->
 
 In response to the challenges related to ambiguity between identically
-named identities issued
-by different CAs, application owners frequently choose to onboard IoT
-device's client identities
-to a single private PKI with a limited CA set that is specific to that vertical.
-This creates a silo effect where different parts of large deployment can not
-communicate.  For instance the heating/cooling system of a building
-wishing to turn lights off to reduce room temperatures can not
-authenticate to the lighting control system.
+named identities issued by different CAs, application owners
+frequently choose to onboard client identities to a single private PKI
+with a limited CA set that is specific to that vertical.  This creates
+a silo effect where different parts of large deployment can not
+communicate.  Examples of where DANCE could be useful includes SMTP
+transport client authentication, authentication of DNS authoritative
+server to server zone file transfers over TLS, authentication to DNS
+recursive servers, and Internet of Things (IoT) device identification.
 
 ## Scope of work
 
-DANISH will specify the TLS client authentication use case and an
+DANCE will specify the TLS client authentication use cases and an
 architecture describing the primary components and interaction patterns.
 
-DANISH will establish usage conventions for DANE DNS records to represent
-client identities for TLS connections. 
+DANCE will define how DNS DANE records will represent client
+identities for TLS connections.
 
-DANISH will coordinate with the TLS working group to define any required
-TLS protocol updates required to support client authentication using
-DANE.
+DANCE will coordinate with the TLS working group to define any
+required TLS protocol updates required to support client
+authentication using DANE.
 
-Future work may include using client identifiers for other tasks including object security, or authenticating to other protocol services.
-The DANISH working group will take care to ensure a
-potential path for interoperability, enabling these potential future directions.
+The DANCE scope of work will be initially limited to just TLS client
+authentication.  Future work may include using client identifiers for
+other tasks including object security, or authenticating to other
+protocols.
 
 ## Deliverables:
 
-* DANISH architecture document (9 months)
+* DANCE architecture and use cases (IoT, SMTP client,
+  authentication to DNS services, ...) document (9 months)
 
-* DANE for device certificates (current draft) (6 months)
+* DANE client authentication and publication practices (current draft) (6 months)
 
-* DANE for TLS client authentication (current draft) (6 months)
+* A TLS extension to indicate DANE identification capability and the
+  client's DANE identity name (current draft) (6 months)
 
 
