@@ -1,7 +1,7 @@
 # Charter proposal for an DANCE WG
 
 - Name: DANE Authentication for Network Clients Everywhere (DANCE) [TBD: verify]
-- Revision: 1.2.0
+- Revision: 1.3.0
 
 ## Objective
 
